@@ -1,0 +1,35 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.main-container{
+   display: block;
+   margin: 0 auto;
+   width: 50%;
+   -webkit-text-size-adjust: none; 
+}
+
+.text-region{
+    font-family: monospace;
+    font-size: 1.5em;
+    padding: 3px 7px;
+    min-height: 30px;
+    border: 3px solid brown;
+    box-shadow: 0px 2px 2px black;
+
+    cursor: text;
+}
+
+.text-region b {
+    color: red;
+}
+
+.unseen, csv-file-info{
+    display: none;
+}

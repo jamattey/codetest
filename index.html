@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Judy Legal Codetest - James Amattey</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Md James Amattey"/>
+    <link rel='stylesheet' type='text/css' media='screen' href='css\main.css'>
+    <script src='js\main.js'></script>
+</head>
+<body>
+    <div class="main-container"><label>Choose Your CSV File</label>
+        <input type="file"  id="csv" onchange="loadCSVFile(event);">
+        <br><br>
+        <section class="csv-file-info">
+            <h3>CSV Header:</h3>
+            <div id="header-text-div" class="text-region" contenteditable>
+
+            </div>
+            <br><br>
+            <h4>Processed CSV Values:</h4>
+            <div id="text-div" class="text-region" contenteditable></div>
+            <br><br>
+            <h4>Processed CSV Values:</h4>
+            <div class="text-region" id="text-control" contenteditable></div>
+        </section>
+        <textarea id="original" class="unseen"></textarea>
+        <textarea id="processed-values" class="unseen"></textarea>
+    </div>
+</body>
